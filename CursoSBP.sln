@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoSBP.Data", "CursoSBP.Data\CursoSBP.Data.csproj", "{A60695D5-08BB-4C00-8D43-38E128CFC6FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoSBP.Common", "CursoSBP.Common\CursoSBP.Common.csproj", "{CB0D8490-750E-4621-BD16-EEFE826D91D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A60695D5-08BB-4C00-8D43-38E128CFC6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A60695D5-08BB-4C00-8D43-38E128CFC6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A60695D5-08BB-4C00-8D43-38E128CFC6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A60695D5-08BB-4C00-8D43-38E128CFC6FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB0D8490-750E-4621-BD16-EEFE826D91D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB0D8490-750E-4621-BD16-EEFE826D91D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB0D8490-750E-4621-BD16-EEFE826D91D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB0D8490-750E-4621-BD16-EEFE826D91D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31D09F01-9109-479F-BCB7-6BBD1AC1E707}
+	EndGlobalSection
+EndGlobal
