@@ -1,9 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CursoSBP.Common.Models.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CursoSBP.Data
 {
@@ -11,7 +7,14 @@ namespace CursoSBP.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-            
+
         }
+
+        #region Define SQL Entities
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
+        public DbSet<Schedule> Schedules { get; set; }
+
+        #endregion
     }
 }

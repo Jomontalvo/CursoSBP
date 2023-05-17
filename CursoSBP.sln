@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoSBP.Data", "CursoSBP.Data\CursoSBP.Data.csproj", "{A60695D5-08BB-4C00-8D43-38E128CFC6FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoSBP.Data", "CursoSBP.Data\CursoSBP.Data.csproj", "{A60695D5-08BB-4C00-8D43-38E128CFC6FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoSBP.Common", "CursoSBP.Common\CursoSBP.Common.csproj", "{CB0D8490-750E-4621-BD16-EEFE826D91D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoSBP.Common", "CursoSBP.Common\CursoSBP.Common.csproj", "{CB0D8490-750E-4621-BD16-EEFE826D91D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoSBP.Api", "CursoSBP.Api\CursoSBP.Api.csproj", "{CF046944-9B58-4991-A563-83D37266B7AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CB0D8490-750E-4621-BD16-EEFE826D91D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB0D8490-750E-4621-BD16-EEFE826D91D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB0D8490-750E-4621-BD16-EEFE826D91D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF046944-9B58-4991-A563-83D37266B7AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF046944-9B58-4991-A563-83D37266B7AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF046944-9B58-4991-A563-83D37266B7AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF046944-9B58-4991-A563-83D37266B7AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
