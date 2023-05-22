@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CursoSBP.Common.Enums
 {
-    public enum Gender
+    public enum Gender : byte
     {
         Unknown = 0,
         Male = 1,
