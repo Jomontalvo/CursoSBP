@@ -28,16 +28,16 @@ namespace CursoSBP.Common.Services
                 client.BaseAddress = new Uri(urlBase);
                 var url = $"{servicePrefix}{controller}";
                 var response = await client.GetAsync(url);
-                var result = await response.Content.ReadAsStringAsync();
 
                 if (!response.IsSuccessStatusCode)
                 {
                     return new Response<object>
                     {
                         IsSuccess = false,
-                        Message = result,
+                        Message = response.StatusCode.ToString(),
                     };
                 }
+                var result = await response.Content.ReadAsStringAsync();
 
                 var list = JsonConvert.DeserializeObject<List<T>>(result, options);
                 if (list != null)

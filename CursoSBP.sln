@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoSBP.Data", "CursoSBP.D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoSBP.Common", "CursoSBP.Common\CursoSBP.Common.csproj", "{CB0D8490-750E-4621-BD16-EEFE826D91D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoSBP.Api", "CursoSBP.Api\CursoSBP.Api.csproj", "{CF046944-9B58-4991-A563-83D37266B7AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoSBP.Api", "CursoSBP.Api\CursoSBP.Api.csproj", "{CF046944-9B58-4991-A563-83D37266B7AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{4A8CF064-62D8-43B2-B326-C5A452F05841}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoSBP.Web", "CursoSBP.Web\CursoSBP.Web.csproj", "{92F00244-4A6D-40DF-834F-73BAF5BE7D4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +31,16 @@ Global
 		{CF046944-9B58-4991-A563-83D37266B7AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF046944-9B58-4991-A563-83D37266B7AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF046944-9B58-4991-A563-83D37266B7AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92F00244-4A6D-40DF-834F-73BAF5BE7D4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F00244-4A6D-40DF-834F-73BAF5BE7D4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F00244-4A6D-40DF-834F-73BAF5BE7D4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F00244-4A6D-40DF-834F-73BAF5BE7D4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92F00244-4A6D-40DF-834F-73BAF5BE7D4F} = {4A8CF064-62D8-43B2-B326-C5A452F05841}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {31D09F01-9109-479F-BCB7-6BBD1AC1E707}
