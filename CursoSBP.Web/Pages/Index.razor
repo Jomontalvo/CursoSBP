@@ -1,31 +1,29 @@
 ﻿@page "/"
 @inject CursoSBP.Common.Services.IApiService ApiService
+@inject CursoSBP.Web.Helpers.IConfigurationRoutes Routes
 
 <PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Lista de Estudiantes</h1>
 
-Welcome to your new app.
+Lista de Estudiantes ordenados por Identificador
 <IgbDataGrid
     Height="400px"
     DataSource= "studentList">
 </IgbDataGrid>
 
 @code{
-    private string urlApi = "https://localhost:7131/";
-    private string prefix = "api/";
-    private string controller = "Students";
     protected List<Student>? studentList;
-
     protected async override Task OnInitializedAsync()
     {
         try
         {
-            var request = await ApiService.GetListAsync<Student>(urlApi, prefix, controller);
+            var request = await ApiService.GetListAsync<Student>(
+                Routes.ApiUrl, 
+                Routes.Prefix, 
+                Routes.Students);
             if (request.IsSuccess)
-            {
-                studentList = (List<Student>)request.Result;
-            }
+            studentList = (List<Student>)request.Result;
         }
         catch (Exception ex)
         {

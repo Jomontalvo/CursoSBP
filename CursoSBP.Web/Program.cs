@@ -1,5 +1,6 @@
 using CursoSBP.Common.Services;
 using CursoSBP.Web;
+using CursoSBP.Web.Helpers;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
@@ -9,6 +10,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddScoped<IApiService, ApiService>();
+builder.Services.AddScoped<IConfigurationRoutes, ConfigurationRoutes>();
 builder.Services.AddIgniteUIBlazor();
 
 await builder.Build().RunAsync();
